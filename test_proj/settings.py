@@ -24,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '#(664n9*-y@ybhr*yu6m%o_nf^af9m%*s^v$fz9-$w$z*z3n_#'
+SECRET_KEY = 'your secreat key'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 #DEBUG = False
@@ -98,11 +98,11 @@ WSGI_APPLICATION = 'test_proj.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'testdb',
-        'USER': 'shb1310',
-        'PASSWORD': 'gudqja1310',
+        'NAME': 'your db name',
+        'USER': 'your db id',
+        'PASSWORD': 'your pw',
         'PORT': '3306',
-        'HOST': 'database-1.cvvltowkc1q7.ap-northeast-2.rds.amazonaws.com',
+        'HOST': 'your db host',
         'OPTIONS': {
             'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
             },
@@ -142,26 +142,10 @@ USE_L10N = True
 
 USE_TZ = True
 
-
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/2.1/howto/static-files/
-#if DEBUG:
-
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
 
 CORS_ORIGIN_ALLOW_ALL = True
 
-#else:
-#	AWS_ACCESS_KEY_ID = 'AKIAXSXQIH7XFO2QSC6A'
-#	AWS_SECRET_ACCESS_KEY = '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'
-#	AWS_STORAGE_BUCKET_NAME = 'testproj-bucket'
-#	AWS_DEFAULT_ACL = None
-#	AWS_S3_REGION_NAME = 'ap-northeast-2'
-#	AWS_S3_HOST = 's3.ap-northeast-2.amazonaws.com'
-#	AWS_S3_OBJECT_PARAMETERS = {
-#		'CacheControl': 'max-age=86400',
-#	}
-	
-	
+
 	
